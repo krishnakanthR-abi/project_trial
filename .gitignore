@@ -128,4 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-D:\Projects\assignments\project_trial\project_trial
+
+project_trial
+.vscode
