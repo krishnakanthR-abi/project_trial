@@ -1,5 +1,6 @@
 
 from flask import Flask, request
+import database
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def login():
     login_data = request.form.to_dict()
     print("Name",login_data['name'])
     print("Number",login_data['number'])
+    print(database.add_user(login_data['name'],login_data['number']))
     return "logged in"
 
 if __name__ == '__main__':
