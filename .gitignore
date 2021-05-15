@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -131,5 +132,11 @@ dmypy.json
 D:\Projects\assignments\project_trial\project_trial
 .vscode
 project_trial_env
+=======
+# created by virtualenv automatically
+*
+project_trial
+.vscode
+>>>>>>> develop
 README.md
 LICENSE
