@@ -1,5 +1,7 @@
 import tkinter as tk
-from typing import Text
+import requests
+
+URL = "http://127.0.0.1:9000"
 
 root = tk.Tk()
 root.geometry("500x500")
@@ -19,7 +21,10 @@ tk.Label(root, text="").pack()
 def get_input():
     name = user_name.get()
     number = phone_number.get()
-    print(name, number)
+    dictionary = {}
+    dictionary['name'] = name
+    dictionary['number'] = number
+    requests.post(URL+"/login",data=dictionary)
 
 submit_button = tk.Button(root, textvariable="Login", width=10, height=5, command=get_input).pack()
 
