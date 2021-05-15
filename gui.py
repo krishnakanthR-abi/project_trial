@@ -24,7 +24,8 @@ def get_input():
     dictionary = {}
     dictionary['name'] = name
     dictionary['number'] = number
-    requests.post(URL+"/login",data=dictionary)
+    result = requests.post(URL+"/login",data=dictionary)
+    print(result.text)
 
 submit_button = tk.Button(root, textvariable="Login", width=10, height=5, command=get_input).pack()
 

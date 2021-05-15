@@ -9,6 +9,7 @@ def fun():
 
 @app.route('/login', methods=['POST'])
 def login():
+    print(request.form)
     login_data = request.form.to_dict()
     print("Name",login_data['name'])
     print("Number",login_data['number'])
