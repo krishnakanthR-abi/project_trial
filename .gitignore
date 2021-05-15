@@ -128,13 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-D:\Projects\assignments\project_trial\project_trial
+
 .vscode
 project_trial_env
-=======
-# created by virtualenv automatically
-*
 project_trial
 .vscode
 README.md
 LICENSE
+pull_env
